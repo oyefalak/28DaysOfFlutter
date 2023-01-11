@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_null_comparison
+// ignore_for_file: unnecessary_null_comparison, unused_element
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -15,9 +15,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final int days = 30;
+  //final int days = 30;
 
-  final String name = "By Shabbir";
+  //final String name = "By Shabbir";
 
   @override
   void initState() {
@@ -25,13 +25,13 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     loadData() async {
       await Future.delayed(const Duration(seconds: 2));
-      final catalogJson = await rootBundle.loadString("assets/files/catalog.json");
+      final catalogJson = await rootBundle.loadString('assets/files/catalog.json');
       final decodedData = jsonDecode(catalogJson);
       var productsData = decodedData["products"];
       CatalogModel.items = List.from(productsData)
           .map<Item>((item) => Item.fromMap(item))
           .toList();
-      setState(() {});
+      setState(() { });
     }
   }
 
