@@ -14,9 +14,9 @@ class HomeDetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -26,7 +26,7 @@ class HomeDetailPage extends StatelessWidget {
                 onPressed: () {},
                 style: ButtonStyle(
                   backgroundColor: MaterialStatePropertyAll(
-                      MyTheme.darkBlueColor
+                      context.theme.buttonColor,
                   ),
 
                   shape: MaterialStatePropertyAll(
@@ -51,10 +51,10 @@ class HomeDetailPage extends StatelessWidget {
             edge: VxEdge.TOP,
             arcType: VxArcType.CONVEY,
             child: Container(
-              color: Colors.white,
+              color: context.cardColor,
               width: context.screenWidth,
               child: Column(children: [
-                catalog.name.text.xl4.color(MyTheme.darkBlueColor).bold.make(),
+                catalog.name.text.xl4.color(context.accentColor).bold.make(),
                 catalog.desc.text.xl.textStyle(context.captionStyle).make(),
                 10.heightBox,
                 "Dolor sea takimata ipsum sea eirmod aliquyam est. Eos ipsum voluptua eirmod elitr, no dolor dolor amet eirmod dolor labore dolores magna. Amet vero vero vero kasd, dolore sea sed sit invidunt nonumy est sit clita. Diam aliquyam amet tempor diam no aliquyam invidunt."
