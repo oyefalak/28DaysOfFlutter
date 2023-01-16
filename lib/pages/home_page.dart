@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:my_first_app/models/catalog.dart';
 import 'package:my_first_app/utils/routes.dart';
-import 'package:my_first_app/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 import '../widgets/home_widgets/catalog_header.dart';
 import '../widgets/home_widgets/catalog_list.dart';
