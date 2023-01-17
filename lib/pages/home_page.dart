@@ -20,7 +20,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final int days = 30;
 
-  final String name = "Shabbir";
+  final String name = "Shabbir Rajput";
 
   final url = "https://api.jsonbin.io/b/604dbddb683e7e079c4eefd3";
 
