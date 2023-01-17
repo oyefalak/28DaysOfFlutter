@@ -12,3 +12,4 @@ class MyStore extends VxStore{
     cart.catalog = catalog;
   }
 }
+
