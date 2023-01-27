@@ -35,6 +35,7 @@ class _HomePageState extends State<HomePage> {
     final catalogJson =
     await rootBundle.loadString("assets/files/catalog.json");
 
+    //the json url is not available so i used hardcoded data
     // final response = await http.get(Uri.parse(url));
     // final catalogJson = response.body;
 
