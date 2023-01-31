@@ -19,7 +19,7 @@
         {
             "id": 3,
             "name": "M1 Macbook Air",
-            "desc": "Apple Macbook air with apple silicon",
+            "desc": "Apple Macbook Air with apple silicon",
             "price": 1099,
             "color": "#e0bfae",
             "image": "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP825/macbookair.png"
